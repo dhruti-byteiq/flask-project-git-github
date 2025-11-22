@@ -1,0 +1,71 @@
+{
+  "user": {
+    "id": 12345,
+    "name": "John Doe",
+    "email": "johndoe@example.com",
+    "address": {
+      "street": "123 Elm St",
+      "city": "Sample City",
+      "state": "SC",
+      "postal_code": "12345"
+    },
+    "phone": [
+      {
+        "type": "mobile",
+        "number": "+1234567890"
+      },
+      {
+        "type": "home",
+        "number": "+0987654321"
+      }
+    ],
+    "is_active": true,
+    "roles": ["user", "admin"]
+  },
+  "orders": [
+    {
+      "order_id": "abc123",
+      "date": "2025-11-01",
+      "total": 199.99,
+      "items": [
+        {
+          "product_id": "p001",
+          "product_name": "Laptop",
+          "quantity": 1,
+          "price": 1200.00
+        },
+        {
+          "product_id": "p002",
+          "product_name": "Mouse",
+          "quantity": 1,
+          "price": 25.99
+        }
+      ],
+      "shipping_address": {
+        "street": "456 Oak St",
+        "city": "Another City",
+        "state": "AC",
+        "postal_code": "67890"
+      }
+    },
+    {
+      "order_id": "def456",
+      "date": "2025-11-05",
+      "total": 55.50,
+      "items": [
+        {
+          "product_id": "p003",
+          "product_name": "Headphones",
+          "quantity": 1,
+          "price": 55.50
+        }
+      ],
+      "shipping_address": {
+        "street": "789 Pine St",
+        "city": "New City",
+        "state": "NC",
+        "postal_code": "11223"
+      }
+    }
+  ]
+}

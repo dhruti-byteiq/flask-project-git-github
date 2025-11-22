@@ -1,0 +1,5 @@
+flask
+requests
+pymongo[srv]==3.12
+dnspython
+python-dotenv

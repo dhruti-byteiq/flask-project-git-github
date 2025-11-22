@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submit Data</title>
+</head>
+<body>
+    <h1>Submit Your Information</h1>
+    {% if error_message %}
+        <div style="color: red;">Error: {{ error_message }}</div>
+    {% endif %}
+
+    <form action="/submit" method="POST">
+        <label for="name">Name:</label><br>
+        <input type="text" name="name" id="name"><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" name="email" id="email"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+</body>
+</html>
