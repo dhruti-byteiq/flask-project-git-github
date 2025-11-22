@@ -49,6 +49,17 @@ def form():
 def success():
     return render_template('success.html')
 
+@app.route('/submittodoitem', methods=['POST'])
+def submit_todo_item():
+    data = request.json
+    itemName = data.get('itemName')
+    itemDescription = data.get('itemDescription')
+
+    todo = {"itemName":itemName, "itemDescription":itemDescription}
+    db.todos.insert_one(todo)
+
+    return {"status": "success"}
+
 
 if __name__ == '__main__':
     app.run(debug=True)
